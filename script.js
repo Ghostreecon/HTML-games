@@ -1,7 +1,7 @@
 let level = 1;
-let lives = 3;
+let lives = 5;
 let score = 0;
-let timeLimit = 10; // Temps limite en secondes
+let timeLimit = 20; // Temps limite en secondes
 let secretNumber;
 let timer;
 
@@ -72,7 +72,7 @@ function updateLives() {
 
 function resetGame() {
     level = 1;
-    lives = 3;
+    lives = 5;
     score = 0;
     initializeGame();
 }
