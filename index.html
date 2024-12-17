@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Devinette</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        #game-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        #feedback {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px 0;
+            width: 80%;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        #score, #lives {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Jeu de Devinette</h1>
+        <p id="instructions"></p>
+        <input type="number" id="guess" placeholder="Entrez votre nombre" />
+        <button onclick="makeGuess()">Deviner</button>
+        <p id="feedback"></p>
+        <div id="score"></div>
+        <div id="lives"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
